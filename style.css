@@ -1,6 +1,28 @@
-*{box-sizing:border-box}body{font-family:system-ui,Segoe UI,Arial,sans-serif;margin:0;color:#1b2333;line-height:1.55}
-.w{max-width:880px;margin:0 auto;padding:0 20px}header{background:#1F2A44;color:#fff;padding:64px 0}h1{font-size:2.3rem;line-height:1.15;margin:0 0 14px}
-h2{font-size:1.6rem;margin-top:48px}.btn{display:inline-block;background:#f5a623;color:#1b2333;font-weight:700;padding:16px 28px;border-radius:8px;text-decoration:none;font-size:1.1rem}
-.sub{font-size:1.15rem;opacity:.92}section{padding:8px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-.card{border:1px solid #dde3ee;border-radius:10px;padding:18px;background:#fafbfe}.price{font-size:2.4rem;font-weight:800}
-.note{font-size:.85rem;color:#5b6577}footer{margin-top:60px;padding:30px 0;background:#f2f4f9;font-size:.85rem;color:#5b6577}ul{padding-left:20px}
+/* Tokens from 90 Jeff Standards/ai-the-vl-way-design-system/tokens/colors.css and brand file sections 3 and 4 */
+:root{--cognac:#C67A3C;--cognac-light:#F5E6D5;--cognac-dark:#8B5628;--navy:#14314F;--navy-tint:#E7ECF3;--navy-dark:#0E2740;--warm-white:#F7F3EE;--cream:#EDE7DF;--white:#fff;--warm-grey:#6B6560;
+--page:var(--warm-white);--page-alt:var(--cream);--card:var(--white);--text:var(--navy);--muted:var(--warm-grey);--accent-text:var(--cognac-dark);--panel:var(--navy);--on-panel:var(--white);--soft:var(--cognac-light);--link:var(--navy);
+--shadow:0 1px 2px rgba(20,49,79,.08),0 4px 12px rgba(20,49,79,.06);--font:"DM Sans","Nunito Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace}
+@media(prefers-color-scheme:dark){:root{--page:#0E2740;--page-alt:#12314D;--card:#12304C;--text:#EDE7DF;--muted:#A6A29C;--accent-text:#E09A5F;--panel:#EDE7DF;--on-panel:#0E2740;--soft:rgba(198,122,60,.16);--link:#E09A5F;--shadow:none}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--page);color:var(--text);font:400 17px/1.6 var(--font)}
+.w{max-width:880px;margin:0 auto;padding:0 24px}.measure{max-width:65ch}
+nav{padding:20px 0}nav img{height:44px;display:block}
+.hero{padding:48px 0 64px}
+.eyebrow{font-weight:500;font-size:14px;color:var(--accent-text);margin:0 0 16px}
+h1{font-weight:700;letter-spacing:-.02em;line-height:1.1;font-size:clamp(2rem,5vw,3rem);margin:0 0 20px;max-width:20ch}
+h2{font-weight:700;letter-spacing:-.02em;font-size:1.75rem;line-height:1.2;margin:0 0 16px}
+h3{font-weight:700;font-size:1.05rem;margin:0 0 8px}
+p{margin:0 0 16px}.lead{font-size:1.2rem}
+.btn{display:inline-block;background:var(--cognac);color:var(--warm-white);font-weight:700;font-size:18px;padding:16px 28px;border-radius:8px;text-decoration:none;transition:background .15s}
+.btn:hover{background:var(--cognac-dark)}.btn:focus-visible{outline:3px solid var(--cognac);outline-offset:3px}
+.small{font-size:14px;color:var(--muted)}
+section{padding:32px 0}.alt{background:var(--page-alt)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border-radius:12px;padding:24px;box-shadow:var(--shadow)}
+.callout{background:var(--soft);border-left:4px solid var(--cognac);border-radius:4px;padding:16px 24px}
+ul,ol{padding-left:22px;margin:0 0 16px}li{margin-bottom:8px}
+.panel{background:var(--panel);color:var(--on-panel);border-radius:12px;padding:48px 32px;text-align:center}
+.panel h2{margin-bottom:8px}.panel p{opacity:.85}.price{font-size:3rem;font-weight:700;letter-spacing:-.02em;line-height:1}
+footer{padding:48px 0;color:var(--muted);font-size:14px}footer a{color:var(--link)}
+.sig{font-weight:500;color:var(--muted)}
+code{font-family:var(--mono);font-size:.9em}

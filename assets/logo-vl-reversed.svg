@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none">
+  <!-- vL mark, Direction B, refined geometry (adopted 2026-09-23). Reversed: Warm White on Warm Charcoal.
+       Source of truth: 90 Jeff Standards/brand-ai-the-vl-way.md section 2. -->
+  <rect width="120" height="120" fill="#2C2926"/>
+  <g stroke="#F7F3EE" stroke-width="9" stroke-linejoin="miter" stroke-linecap="butt">
+    <rect x="12" y="12" width="96" height="96"/>
+    <path d="M27 52 L42 86 L57 52"/>
+    <path d="M69 34 L69 86 L92 86"/>
+  </g>
+</svg>
